@@ -39,7 +39,7 @@ namespace GEFIDAPI.Controllers
         [HttpPut()]
         public bool Put(int id, [FromBody]Acesso acesso)
         {
-            acesso.idLogin = id;
+            acesso.IdLogin = id;
             bool Result = _acessoRepositorio.Update(acesso);
             return Result;
         }

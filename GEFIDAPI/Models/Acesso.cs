@@ -5,14 +5,14 @@ namespace GEFIDAPI.Models
     public class Acesso
     {
         [Key]
-        public int idLogin { get; set; }
-        public int idGrupo { get; set; }
-        public string email { get; set; }
-        public string senha { get; set; }
-        public string cpf { get; set; }
-        public bool ativo { get; set; }
-        public string nome { get; set; }
-        public string sobrenome { get; set; }
-        public int idCliente { get; set; }
+        public int IdLogin { get; set; }
+        public int IdGrupo { get; set; }
+        public string Email { get; set; }
+        public string Senha { get; set; }
+        public string Cpf { get; set; }
+        public bool Ativo { get; set; }
+        public string Nome { get; set; }
+        public string Sobrenome { get; set; }
+        public int IdCliente { get; set; }
     }
 }

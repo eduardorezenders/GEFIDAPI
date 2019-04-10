@@ -28,15 +28,15 @@ namespace GEFIDAPI.Models
                             while (dr.Read())
                             {
                                 var acesso = new Acesso();
-                                acesso.idLogin = Convert.ToInt32(dr["idLogin"]);
-                                acesso.idGrupo = Convert.ToInt32(dr["idGrupo"]);
-                                acesso.email = dr["email"].ToString();
-                                acesso.senha = dr["senha"].ToString();
-                                acesso.cpf = dr["cpf"].ToString();
-                                acesso.ativo = Convert.ToBoolean(dr["ativo"]);
-                                acesso.nome = dr["nome"].ToString();
-                                acesso.sobrenome = dr["sobrenome"].ToString();
-                                acesso.idCliente = Convert.ToInt32(dr["idCliente"]);
+                                acesso.IdLogin = Convert.ToInt32(dr["idLogin"]);
+                                acesso.IdGrupo = Convert.ToInt32(dr["idGrupo"]);
+                                acesso.Email = dr["email"].ToString();
+                                acesso.Senha = dr["senha"].ToString();
+                                acesso.Cpf = dr["cpf"].ToString();
+                                acesso.Ativo = Convert.ToBoolean(dr["ativo"]);
+                                acesso.Nome = dr["nome"].ToString();
+                                acesso.Sobrenome = dr["sobrenome"].ToString();
+                                acesso.IdCliente = Convert.ToInt32(dr["idCliente"]);
                                 _acessos.Add(acesso);
                             }
                         }
@@ -61,15 +61,15 @@ namespace GEFIDAPI.Models
                             while (dr.Read())
                             {
                                 _acesso = new Acesso();
-                                _acesso.idLogin = Convert.ToInt32(dr["idLogin"]);
-                                _acesso.idGrupo = Convert.ToInt32(dr["idGrupo"]);
-                                _acesso.email = dr["email"].ToString();
-                                _acesso.senha = dr["senha"].ToString();
-                                _acesso.cpf = dr["cpf"].ToString();
-                                _acesso.ativo = Convert.ToBoolean(dr["ativo"]);
-                                _acesso.nome = dr["nome"].ToString();
-                                _acesso.sobrenome = dr["sobrenome"].ToString();
-                                _acesso.idCliente = Convert.ToInt32(dr["idCliente"]);
+                                _acesso.IdLogin = Convert.ToInt32(dr["idLogin"]);
+                                _acesso.IdGrupo = Convert.ToInt32(dr["idGrupo"]);
+                                _acesso.Email = dr["email"].ToString();
+                                _acesso.Senha = dr["senha"].ToString();
+                                _acesso.Cpf = dr["cpf"].ToString();
+                                _acesso.Ativo = Convert.ToBoolean(dr["ativo"]);
+                                _acesso.Nome = dr["nome"].ToString();
+                                _acesso.Sobrenome = dr["sobrenome"].ToString();
+                                _acesso.IdCliente = Convert.ToInt32(dr["idCliente"]);
                             }
                         }
                         return _acesso;
@@ -87,14 +87,14 @@ namespace GEFIDAPI.Models
                 using (SqlCommand cmd = new SqlCommand(sql, con))
                 {
                     cmd.CommandType = CommandType.Text;
-                    cmd.Parameters.AddWithValue("@idGrupo", acesso.idGrupo);
-                    cmd.Parameters.AddWithValue("@email", acesso.email);
-                    cmd.Parameters.AddWithValue("@senha", acesso.senha);
-                    cmd.Parameters.AddWithValue("@cpf", acesso.cpf);
-                    cmd.Parameters.AddWithValue("@ativo", acesso.ativo);
-                    cmd.Parameters.AddWithValue("@nome", acesso.nome);
-                    cmd.Parameters.AddWithValue("@sobrenome", acesso.sobrenome);
-                    cmd.Parameters.AddWithValue("@idCliente", acesso.idCliente);
+                    cmd.Parameters.AddWithValue("@idGrupo", acesso.IdGrupo);
+                    cmd.Parameters.AddWithValue("@email", acesso.Email);
+                    cmd.Parameters.AddWithValue("@senha", acesso.Senha);
+                    cmd.Parameters.AddWithValue("@cpf", acesso.Cpf);
+                    cmd.Parameters.AddWithValue("@ativo", acesso.Ativo);
+                    cmd.Parameters.AddWithValue("@nome", acesso.Nome);
+                    cmd.Parameters.AddWithValue("@sobrenome", acesso.Sobrenome);
+                    cmd.Parameters.AddWithValue("@idCliente", acesso.IdCliente);
 
                     con.Open();
                     reg = cmd.ExecuteNonQuery();
@@ -113,10 +113,10 @@ namespace GEFIDAPI.Models
                 using (SqlCommand cmd = new SqlCommand(sql, con))
                 {
                     cmd.CommandType = CommandType.Text;
-                    cmd.Parameters.AddWithValue("@email", acesso.email);
-                    cmd.Parameters.AddWithValue("@senha", acesso.senha);
-                    cmd.Parameters.AddWithValue("@nome", acesso.nome);
-                    cmd.Parameters.AddWithValue("@sobrenome", acesso.sobrenome);
+                    cmd.Parameters.AddWithValue("@email", acesso.Email);
+                    cmd.Parameters.AddWithValue("@senha", acesso.Senha);
+                    cmd.Parameters.AddWithValue("@nome", acesso.Nome);
+                    cmd.Parameters.AddWithValue("@sobrenome", acesso.Sobrenome);
 
                     con.Open();
                     reg = cmd.ExecuteNonQuery();

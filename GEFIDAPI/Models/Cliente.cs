@@ -4,18 +4,18 @@ namespace GEFIDAPI.Models
 {
     public class Cliente
     {
-        public int idCliente { get; set; }
-        public string razaoSocial { get; set; }
-        public string nomeTitular { get; set; }
-        public string login { get; set; }
-        public DateTime dtCadastro { get; set; }
-        public string cpf { get; set; }
-        public string cnpj { get; set; }
-        public bool ativo { get; set; }
-        public string chaveapi { get; set; }
-        public string facebook { get; set; }
-        public string sfacebook { get; set; }
-        public string whatsapp { get; set; }
-        public string swhatsapp { get; set; }
+        public int IdCliente { get; set; }
+        public string RazaoSocial { get; set; }
+        public string NomeTitular { get; set; }
+        public string Login { get; set; }
+        public DateTime DtCadastro { get; set; }
+        public string Cpf { get; set; }
+        public string Cnpj { get; set; }
+        public bool Ativo { get; set; }
+        public string Chaveapi { get; set; }
+        public string Facebook { get; set; }
+        public string Sfacebook { get; set; }
+        public string Whatsapp { get; set; }
+        public string Swhatsapp { get; set; }
     }
 }

@@ -4,15 +4,15 @@ namespace GEFIDAPI.Models
 {
     public class Pessoa
     {
-        public int idPessoa { get; set; }
-        public int idCliente { get; set; }
-        public string nomeCompleto { get; set; }
-        public DateTime? dataNascimento { get; set; }
-        public bool ativo { get; set; }
-        public string idGenero { get; set; }
-        public string cpf { get; set; }
-        public string arquivo { get; set; }
-        public string facebook { get; set; }
-        public string whatsapp { get; set; }
+        public int IdPessoa { get; set; }
+        public int IdCliente { get; set; }
+        public string NomeCompleto { get; set; }
+        public DateTime? DataNascimento { get; set; }
+        public bool Ativo { get; set; }
+        public string IdGenero { get; set; }
+        public string Cpf { get; set; }
+        public string Arquivo { get; set; }
+        public string Facebook { get; set; }
+        public string Whatsapp { get; set; }
     }
 }
